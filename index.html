@@ -1,28 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | QR code component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: hsl(212, 45%, 89%);
+      display: flex;
+      flex-direction: column;
+    }
+    main {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    main section {
+      width: 280px;
+      background: white;
+      padding: 18px;
+      border-radius: 18px;
+      text-align: center;
+    }
+    main section img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    main section p {
+      font-size: 15px;
+      color: hsl(216, 15%, 48%);
+    }
+    footer {
+      height: 20px;
+      padding: 15px;
+      text-align: center;
+    }
   </style>
 </head>
 <body>
-
-  Improve your front-end skills by building projects
-
-  Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
-  
-  <div class="attribution">
+  <main>
+    <section>
+      <img src="./images/image-qr-code.png" />
+      <h2>Improve your front-end skills by building projects</h2>
+      <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+    </section>
+  </main>
+  <footer>
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    Coded by <a href="https://github.com/scho7623" target="_blank">Sungho Cho</a>.
+  </footer>
 </body>
 </html>
